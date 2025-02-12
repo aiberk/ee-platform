@@ -17,6 +17,8 @@ import {
   Combine
 } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
+import devices from "@/data/devices";
+console.log(devices);
 
 const navigationItems: SidebarItem[] = [
   {
