@@ -27,12 +27,12 @@ export default async function IndexPage() {
       <Hero
         capsuleText="100% Open-source & Free"
         capsuleLink="https://stacktemplate.com"
-        title="A Multi-tenant Next.js Starter Template"
-        subtitle="Built for developers, by developers. Next.js + Shadcn UI + Stack Auth."
+        title="Extendable IOT Platform"
+        subtitle="Capture, Analyze, and Act on data from your custom IOT Module"
         primaryCtaText="Get Started"
         primaryCtaLink={stackServerApp.urls.signUp}
-        secondaryCtaText="GitHub"
-        secondaryCtaLink="https://github.com/stack-auth/stack-template"
+        secondaryCtaText="Learn More"
+        secondaryCtaLink="#features"
         credits={
           <>
             Crafted with ❤️ by{" "}
@@ -40,15 +40,14 @@ export default async function IndexPage() {
               href="https://stack-auth.com"
               target="_blank"
               rel="noreferrer"
-              className="underline"
-            >
+              className="underline">
               Stack Auth
             </a>
           </>
         }
       />
 
-      <div id="features" />
+      {/* <div id="features" />
       <FeatureGrid
         title="Features"
         subtitle="Unlock powerful capabilities for your project."
@@ -61,15 +60,14 @@ export default async function IndexPage() {
             ),
             title: "Next.js 14",
             description:
-              "Utilize the latest features: App Router, Layouts, Suspense.",
+              "Utilize the latest features: App Router, Layouts, Suspense."
           },
           {
             icon: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 256 256"
-                className="h-12 w-12 fill-current"
-              >
+                className="h-12 w-12 fill-current">
                 <rect width="256" height="256" fill="none"></rect>
                 <line
                   x1="208"
@@ -80,8 +78,7 @@ export default async function IndexPage() {
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  strokeWidth="22"
-                ></line>
+                  strokeWidth="22"></line>
                 <line
                   x1="192"
                   y1="40"
@@ -91,13 +88,12 @@ export default async function IndexPage() {
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  strokeWidth="22"
-                ></line>
+                  strokeWidth="22"></line>
               </svg>
             ),
             title: "Shadcn UI",
             description:
-              "Modern and fully customizable UI components based on Tailwind CSS.",
+              "Modern and fully customizable UI components based on Tailwind CSS."
           },
           {
             icon: (
@@ -107,34 +103,33 @@ export default async function IndexPage() {
                 viewBox="0 0 201 242"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 fill-current"
-              >
+                className="h-12 w-12 fill-current">
                 <path d="M104.004 1.78785C101.751 0.662376 99.1002 0.663161 96.8483 1.78998L4.9201 47.7892C2.21103 49.1448 0.5 51.9143 0.5 54.9436V130.526C0.5 133.556 2.2123 136.327 4.92292 137.682L96.9204 183.67C99.1725 184.796 101.823 184.796 104.075 183.67L168.922 151.246C174.242 148.587 180.5 152.455 180.5 158.402V168.855C180.5 171.885 178.788 174.655 176.078 176.01L104.077 212.011C101.825 213.137 99.1745 213.137 96.9224 212.012L12.0771 169.598C6.75791 166.939 0.5 170.807 0.5 176.754V187.048C0.5 190.083 2.21689 192.856 4.93309 194.209L97.0051 240.072C99.2529 241.191 101.896 241.191 104.143 240.07L196.071 194.21C198.785 192.857 200.5 190.084 200.5 187.052V119.487C200.5 113.54 194.242 109.672 188.922 112.332L132.078 140.754C126.758 143.414 120.5 139.546 120.5 133.599V123.145C120.5 120.115 122.212 117.345 124.922 115.99L196.078 80.4124C198.788 79.0573 200.5 76.2872 200.5 73.257V54.9468C200.5 51.9158 198.787 49.1451 196.076 47.7904L104.004 1.78785Z" />
               </svg>
             ),
             title: "Stack Auth",
             description:
-              "Comprehensive Authentication: OAuth, User Management, and more.",
+              "Comprehensive Authentication: OAuth, User Management, and more."
           },
           {
             icon: <Users className="h-12 w-12" />,
             title: "Multi-tenancy & RBAC",
-            description: "Built-in Teams and Permissions.",
+            description: "Built-in Teams and Permissions."
           },
           {
             icon: <GitHubLogoIcon className="h-12 w-12" />,
             title: "100% Open-source",
-            description: "Open-source and self-hostable codebase.",
+            description: "Open-source and self-hostable codebase."
           },
           {
             icon: <ComponentIcon className="h-12 w-12" />,
             title: "Modular Design",
-            description: "Easily extend and customize. No spaghetti code.",
-          },
+            description: "Easily extend and customize. No spaghetti code."
+          }
         ]}
-      />
+      /> */}
 
-      <div id="pricing" />
+      {/* <div id="pricing" />
       <PricingGrid
         title="Pricing"
         subtitle="Flexible plans for every team."
@@ -148,10 +143,10 @@ export default async function IndexPage() {
               "100% Open-source",
               "Community support",
               "Free forever",
-              "No credit card required",
+              "No credit card required"
             ],
             buttonText: "Get Started",
-            buttonHref: stackServerApp.urls.signUp,
+            buttonHref: stackServerApp.urls.signUp
           },
           {
             title: "Pro",
@@ -162,11 +157,11 @@ export default async function IndexPage() {
               "100% Open-source",
               "Community support",
               "Free forever",
-              "No credit card required",
+              "No credit card required"
             ],
             buttonText: "Upgrade to Pro",
             isPopular: true,
-            buttonHref: stackServerApp.urls.signUp,
+            buttonHref: stackServerApp.urls.signUp
           },
           {
             title: "Enterprise",
@@ -177,13 +172,13 @@ export default async function IndexPage() {
               "100% Open-source",
               "Community support",
               "Free forever",
-              "No credit card required",
+              "No credit card required"
             ],
             buttonText: "Contact Us",
-            buttonHref: stackServerApp.urls.signUp,
-          },
+            buttonHref: stackServerApp.urls.signUp
+          }
         ]}
-      />
+      /> */}
     </>
   );
 }

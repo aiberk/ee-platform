@@ -14,15 +14,11 @@ export function Hero(props: {
   secondaryCtaLink: string;
 }) {
   return (
-    <section className="space-y-6 py-32 md:py-48 lg:py-52">
+    <section className="space-y-6 py-32 md:py-48 lg:py-[25rem]">
       <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-        <Link
-          href={props.capsuleLink}
-          className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
-          target="_blank"
-        >
+        {/* <div className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium">
           {props.capsuleText}
-        </Link>
+        </div> */}
         <h1 className="font-heading text-3xl sm:text-5xl lg:text-7xl">
           {props.title}
         </h1>
@@ -32,8 +28,7 @@ export function Hero(props: {
         <div className="flex gap-4 flex-wrap justify-center">
           <Link
             href={props.primaryCtaLink}
-            className={cn(buttonVariants({ size: "lg" }))}
-          >
+            className={cn(buttonVariants({ size: "lg" }))}>
             {props.primaryCtaText}
           </Link>
 
@@ -41,15 +36,10 @@ export function Hero(props: {
             href={props.secondaryCtaLink}
             target="_blank"
             rel="noreferrer"
-            className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
-          >
+            className={cn(buttonVariants({ variant: "outline", size: "lg" }))}>
             {props.secondaryCtaText}
           </Link>
         </div>
-
-        {props.credits && (
-          <p className="text-sm text-muted-foreground mt-4">{props.credits}</p>
-        )}
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import { Logo } from "@/components/logo";
 import SidebarLayout, { SidebarItem } from "@/components/sidebar-layout";
 import { SelectedTeamSwitcher, useUser } from "@stackframe/stack";
 import {
@@ -101,12 +102,7 @@ export default function Layout(props: { children: React.ReactNode }) {
     <SidebarLayout
       items={navigationItems}
       basePath={`/dashboard/${team.id}`}
-      sidebarTop={
-        <SelectedTeamSwitcher
-          selectedTeam={team}
-          urlMap={(team) => `/dashboard/${team.id}`}
-        />
-      }
+      sidebarTop={<Logo />}
       baseBreadcrumb={[
         {
           title: team.displayName,
