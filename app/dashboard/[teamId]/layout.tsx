@@ -14,7 +14,9 @@ import {
   Database,
   ActivityIcon,
   Microwave,
-  Combine
+  Combine,
+  Container,
+  LineChart
 } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import devices from "@/data/devices";
@@ -27,10 +29,10 @@ const navigationItems: SidebarItem[] = [
     icon: Globe,
     type: "item"
   },
-  {
-    type: "label",
-    name: "Management"
-  },
+  // {
+  //   type: "label",
+  //   name: "Management"
+  // },
   {
     name: "Devices",
     href: "/devices",
@@ -38,9 +40,21 @@ const navigationItems: SidebarItem[] = [
     type: "item"
   },
   {
+    name: "Hubs",
+    href: "/hubs",
+    icon: Container,
+    type: "item"
+  },
+  {
     name: "Data",
     href: "/data",
     icon: Database,
+    type: "item"
+  },
+  {
+    name: "Analytics",
+    href: "/analytics",
+    icon: LineChart,
     type: "item"
   },
   {
@@ -77,10 +91,10 @@ const navigationItems: SidebarItem[] = [
   //   icon: BadgePercent,
   //   type: "item"
   // },
-  {
-    type: "label",
-    name: "Settings"
-  },
+  // {
+  //   type: "label",
+  //   name: "Settings"
+  // },
   {
     name: "Platform Settings",
     href: "/settings",

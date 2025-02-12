@@ -5,9 +5,12 @@ export function Logo(props: { className?: string; link?: string }) {
   return (
     <Link
       href={props.link ?? "/"}
-      className={cn("items-center space-x-2 flex flex-row", props.className)}>
+      className={cn(
+        "items-center space-x-2 flex flex-row px-1",
+        props.className
+      )}>
       {/* <span className="font-bold sm:inline-block">Platform</span> */}
-      <div className="flex flex-col w-6 h-6 ">
+      <div className="flex flex-col w-5 h-5 ">
         <div className="flex-1 bg-blue-500"></div>
         <div className="flex-1 bg-purple-500"></div>
         <div className="flex-1 bg-pink-500"></div>
@@ -17,7 +20,7 @@ export function Logo(props: { className?: string; link?: string }) {
         <div className="flex-1 bg-cyan-500"></div>
         {/* <div className="flex-1 bg-indigo-500"></div> */}
       </div>
-      <h1 className="text-gray-700 text-2xl p-2 font-semibold sm:inline-block">
+      <h1 className="text-gray-700 text-lg  font-semibold sm:inline-block dark:text-gray-100/80">
         Platform
       </h1>
       {/* <h1 className="text-2xl p-2 font-bold sm:inline-block">

@@ -14,14 +14,18 @@ export function Hero(props: {
   secondaryCtaLink: string;
 }) {
   return (
-    <section className="space-y-6 py-32 md:py-48 lg:py-[25rem]">
+    <section className="space-y-6 py-32 md:pt-[25rem]">
       <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
         {/* <div className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium">
           {props.capsuleText}
         </div> */}
-        <h1 className="font-heading text-3xl sm:text-5xl lg:text-7xl">
+        {/* <h1 className="font-heading font-bold text-3xl sm:text-5xl lg:text-8xl bg-gradient-to-br from-blue-400 to-purple-700 bg-clip-text text-transparent">
+          {props.title}
+        </h1> */}
+        <h1 className="font-heading font-bold text-3xl sm:text-5xl lg:text-8xl bg-gradient-to-br from-blue-500 via-purple-500 via-pink-500 via-orange-500 via-green-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent">
           {props.title}
         </h1>
+
         <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
           {props.subtitle}
         </p>
@@ -34,8 +38,6 @@ export function Hero(props: {
 
           <Link
             href={props.secondaryCtaLink}
-            target="_blank"
-            rel="noreferrer"
             className={cn(buttonVariants({ variant: "outline", size: "lg" }))}>
             {props.secondaryCtaText}
           </Link>

@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation";
 import devices from "@/data/devices";
 
 export function PageClient() {
-  console.log(devices);
   const router = useRouter();
   const user = useUser({ or: "redirect" });
   const teams = user.useTeams();
