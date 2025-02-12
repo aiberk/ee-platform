@@ -25,24 +25,23 @@ export function PageClient() {
         <div className="max-w-xs w-full">
           <h1 className="text-center text-2xl font-semibold">Welcome!</h1>
           <p className="text-center text-gray-500">
-            Create a team to get started
+            Create a project to get started!
           </p>
           <form
             className="mt-4"
             onSubmit={(e) => {
               e.preventDefault();
               user.createTeam({ displayName: teamDisplayName });
-            }}
-          >
+            }}>
             <div>
-              <Label className="text-sm">Team name</Label>
+              <Label className="text-sm">Project name</Label>
               <Input
-                placeholder="Team name"
+                placeholder="Project name"
                 value={teamDisplayName}
                 onChange={(e) => setTeamDisplayName(e.target.value)}
               />
             </div>
-            <Button className="mt-4 w-full">Create team</Button>
+            <Button className="mt-4 w-full">Create project</Button>
           </form>
         </div>
       </div>
