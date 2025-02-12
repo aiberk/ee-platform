@@ -13,16 +13,16 @@ import {
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 
-export type Hub = {
+interface Hub {
   id: string;
   name: string;
   location: string;
-  status: "online" | "offline" | "maintenance";
+  status: string;
   connectedDevices: number;
   lastUpdated: string;
-};
+}
 
-export const columns: ColumnDef<Hub>[] = [
+export const columns: ColumnDef<Hub, any>[] = [
   {
     id: "select",
     header: ({ table }) => (

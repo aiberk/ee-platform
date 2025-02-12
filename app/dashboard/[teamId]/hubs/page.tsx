@@ -32,7 +32,20 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import hubs from "@/data/hubs"; // ✅ Make sure hubs.ts exists
-import { columns } from "./columns"; // ✅ Ensure columns.tsx is properly set
+
+interface Hub {
+  id: string;
+  name: string;
+  location: string;
+  status: string;
+  connectedDevices: number;
+  lastUpdated: string;
+}
+
+import { ColumnDef } from "@tanstack/react-table";
+import { columns as hubColumns } from "./columns"; // ✅ Ensure columns.tsx is properly set
+
+const columns: ColumnDef<Hub, any>[] = hubColumns;
 
 export default function HubsPage() {
   const [sorting, setSorting] = React.useState<SortingState>([]);
