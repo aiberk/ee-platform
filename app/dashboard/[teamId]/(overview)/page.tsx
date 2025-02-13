@@ -30,7 +30,7 @@ export default function DashboardPage() {
                 <CardTitle className="text-sm font-medium">
                   Total Devices Online
                 </CardTitle>
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -41,7 +41,7 @@ export default function DashboardPage() {
                   className="h-4 w-4 text-muted-foreground">
                   <circle cx="12" cy="12" r="10" />
                   <path d="M12 6v6l4 2" />
-                </svg>
+                </svg> */}
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">8 Devices</div>
@@ -55,7 +55,7 @@ export default function DashboardPage() {
                 <CardTitle className="text-sm font-medium">
                   Average Uptime
                 </CardTitle>
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -67,7 +67,7 @@ export default function DashboardPage() {
                   <path d="M3 3v18h18" />
                   <path d="M3 10h11a1 1 0 0 1 1 1v8" />
                   <path d="M8 14h3" />
-                </svg>
+                </svg> */}
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">99.8%</div>
@@ -81,7 +81,7 @@ export default function DashboardPage() {
                 <CardTitle className="text-sm font-medium">
                   Data Transmitted
                 </CardTitle>
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -92,7 +92,7 @@ export default function DashboardPage() {
                   className="h-4 w-4 text-muted-foreground">
                   <rect width="20" height="14" x="2" y="5" rx="2" />
                   <path d="M2 10h20" />
-                </svg>
+                </svg> */}
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">1.2 TB</div>
@@ -106,7 +106,7 @@ export default function DashboardPage() {
                 <CardTitle className="text-sm font-medium">
                   Alerts Triggered
                 </CardTitle>
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -116,7 +116,7 @@ export default function DashboardPage() {
                   strokeWidth="2"
                   className="h-4 w-4 text-muted-foreground">
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                </svg>
+                </svg> */}
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">56 Alerts</div>

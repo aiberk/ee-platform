@@ -52,17 +52,19 @@ const navigationItems: SidebarItem[] = [
     type: "item"
   },
   {
-    name: "Analytics",
-    href: "/analytics",
-    icon: LineChart,
-    type: "item"
-  },
-  {
     name: "Actions",
     href: "/actions",
     icon: Combine,
     type: "item"
   },
+
+  {
+    name: "Analytics",
+    href: "/analytics",
+    icon: LineChart,
+    type: "item"
+  },
+
   // {
   //   name: "Regions",
   //   href: "/regions",
